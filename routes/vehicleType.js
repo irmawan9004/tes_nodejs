@@ -4,14 +4,21 @@ const auth = require("../middleware/auth");
 
 const router = express.Router();
 
-// GET all vehicle types
-router.get("/", auth, async (req, res) => {
-  const types = await VehicleType.findAll();
+// GET all vehicle types with optional filtering by brand_id
+router.get("/", async (req, res) => {
+  const { brand_id } = req.query;
+
+  const whereClause = {};
+  if (brand_id) {
+    whereClause.brand_id = brand_id;
+  }
+
+  const types = await VehicleType.findAll({ where: whereClause });
   res.send(types);
 });
 
 // GET vehicle type by ID
-router.get("/:id", auth, async (req, res) => {
+router.get("/:id", async (req, res) => {
   const type = await VehicleType.findByPk(req.params.id);
   if (!type) return res.status(404).send("Vehicle type not found");
   res.send(type);

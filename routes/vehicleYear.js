@@ -5,13 +5,13 @@ const auth = require("../middleware/auth");
 const router = express.Router();
 
 // GET all vehicle years
-router.get("/", auth, async (req, res) => {
+router.get("/", async (req, res) => {
   const years = await VehicleYear.findAll();
   res.send(years);
 });
 
 // GET vehicle year by ID
-router.get("/:id", auth, async (req, res) => {
+router.get("/:id", async (req, res) => {
   const year = await VehicleYear.findByPk(req.params.id);
   if (!year) return res.status(404).send("Vehicle year not found");
   res.send(year);

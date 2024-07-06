@@ -28,7 +28,6 @@ router.post("/login", async (req, res) => {
     const { name, password } = req.body;
     const user = await User.findOne({ where: { name } });
     if (!user) return res.status(400).send("Invalid name or password.");
-
     const validPassword = await bcrypt.compare(password, user.password);
     if (!validPassword)
       return res.status(400).send("Invalid name or password.");
@@ -44,7 +43,7 @@ router.post("/login", async (req, res) => {
 });
 
 // GET all users
-router.get("/", auth, async (req, res) => {
+router.get("/", async (req, res) => {
   try {
     const users = await User.findAll();
     res.send(users);
@@ -54,7 +53,7 @@ router.get("/", auth, async (req, res) => {
 });
 
 // GET user by ID
-router.get("/:id", auth, async (req, res) => {
+router.get("/:id", async (req, res) => {
   try {
     const user = await User.findByPk(req.params.id);
     if (!user) return res.status(404).send("User not found");
@@ -65,7 +64,7 @@ router.get("/:id", auth, async (req, res) => {
 });
 
 // PATCH user by ID
-router.patch("/:id", auth, async (req, res) => {
+router.patch("/:id", async (req, res) => {
   try {
     const user = await User.findByPk(req.params.id);
     if (!user) return res.status(404).send("User not found");

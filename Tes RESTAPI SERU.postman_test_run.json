@@ -1,0 +1,726 @@
+{
+	"id": "755313c8-44e9-4c29-9a85-a39194d7d45b",
+	"name": "Tes RESTAPI SERU",
+	"timestamp": "2024-07-06T08:34:07.949Z",
+	"collection_id": "16279777-e1546e32-9181-48d3-b1a3-bae4201de774",
+	"folder_id": 0,
+	"environment_id": "16279777-ac54e405-d892-4301-921f-39bb17ad8c28",
+	"totalPass": 0,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-07-06T08:34:04.359Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "4281e76d-da44-4f35-b7fa-2c8c80a55e66",
+			"name": "Register",
+			"url": "http://localhost:3000/users/register",
+			"time": 105,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				105
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "c889dafd-7705-4c88-94cc-0f20c27291db",
+			"name": "Login",
+			"url": "http://localhost:3000/users/login",
+			"time": 83,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				83
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "58888a3d-1a51-4e09-a6e5-72eced08ab90",
+			"name": "GetUser",
+			"url": "http://localhost:3000/users",
+			"time": 12,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				12
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "db63d001-fb9c-4d66-8c65-c64935ac664d",
+			"name": "GetUserById",
+			"url": "http://localhost:3000/users/2",
+			"time": 17,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				17
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "9d903e9d-4e4b-4b55-bcd5-1b7a099edb1a",
+			"name": "Deleteusers",
+			"url": "http://localhost:3000/users/11",
+			"time": 18,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				18
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "1ce419cb-7700-4ea2-8d1b-6622e8f1bb66",
+			"name": "GetBrand",
+			"url": "http://localhost:3000/vehicle-brands",
+			"time": 10,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				10
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "b015e047-18cb-4d72-be6a-b0712ae22707",
+			"name": "AddNewBrands",
+			"url": "http://localhost:3000/vehicle-brands",
+			"time": 16,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				16
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "8859e06b-358b-461b-ad9d-bb80070c13aa",
+			"name": "GetBrandsbyId",
+			"url": "http://localhost:3000/vehicle-brands/1",
+			"time": 6,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				6
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "ba0f4c53-ba9c-4fdc-b39b-98169e3d3ce7",
+			"name": "PatchBrands",
+			"url": "http://localhost:3000/vehicle-brands/1",
+			"time": 32,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				32
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "0ae15dc3-878e-4318-9fdd-dc6407e23bdf",
+			"name": "DeleteBrands",
+			"url": "http://localhost:3000/vehicle-brands/5",
+			"time": 25,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				25
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "dde35719-8b3c-4975-b935-5f40740e743b",
+			"name": "GetAllYear",
+			"url": "http://localhost:3000/vehicle-years",
+			"time": 8,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				8
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "e0e0f6b9-c88e-4ac2-8f97-9beeef289ead",
+			"name": "GetAllYearByID",
+			"url": "http://localhost:3000/vehicle-years/1",
+			"time": 7,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				7
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "81a1776e-2bbe-4e3d-9bfb-bf9c09c1946b",
+			"name": "CreateYears",
+			"url": "http://localhost:3000/vehicle-years",
+			"time": 14,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				14
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "fdffdd16-3d17-45d9-8529-a8925f909231",
+			"name": "PatchYear",
+			"url": "http://localhost:3000/vehicle-years/1",
+			"time": 18,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				18
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "7cbb2ce5-c608-4998-b834-3ea6e903c7bc",
+			"name": "DeleteYear",
+			"url": "http://localhost:3000/vehicle-years/5",
+			"time": 5,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				5
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "6fd11f21-d191-47b0-bddd-7001a206af99",
+			"name": "GetPricelists",
+			"url": "http://localhost:3000/pricelists",
+			"time": 8,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				8
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "691186d2-cee0-401f-8719-f70852eaf19d",
+			"name": "GetpricelistsById",
+			"url": "http://localhost:3000/pricelists/2",
+			"time": 10,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				10
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "ee57cb81-fb9e-41f2-a27c-d565a2f08a00",
+			"name": "AddPricelists",
+			"url": "http://localhost:3000/pricelists",
+			"time": 12,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				12
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "c04208f3-0327-46da-bfda-9edf842be34e",
+			"name": "PatchPricelists",
+			"url": "http://localhost:3000/pricelists/1",
+			"time": 6,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				6
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "6005ece8-ad06-4e80-afec-bf2e831b3752",
+			"name": "DeletePricelists",
+			"url": "http://localhost:3000/pricelists/4",
+			"time": 12,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				12
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "a3ea5a61-f3cf-4fe8-8bad-dec7ddd4ac3f",
+			"name": "getRequestbyFilterandPagination",
+			"url": "http://localhost:3000/pricelists?page=1&limit=10&year_id=1&model_id=2",
+			"time": 5,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				5
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "a41e2f17-24ff-417d-8876-01ba9a73b08e",
+			"name": "getTypes",
+			"url": "http://localhost:3000/vehicle-types",
+			"time": 5,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				5
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "30de3e15-6ba1-4da0-ad30-d13eefb596df",
+			"name": "getTypeById",
+			"url": "http://localhost:3000/vehicle-types/1",
+			"time": 7,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				7
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "b1b4694d-4f1a-49e0-b54d-276089f5da5d",
+			"name": "CreateType",
+			"url": "http://localhost:3000/vehicle-types",
+			"time": 8,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				8
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "07eaf6a3-77ed-4d32-ba3e-24833ed91544",
+			"name": "PatchTypes",
+			"url": "http://localhost:3000/vehicle-types/1",
+			"time": 15,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				15
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "fcb76dc2-69a4-42ed-b7cd-e421dd32d5c2",
+			"name": "DeleteTypes",
+			"url": "http://localhost:3000/vehicle-types/5",
+			"time": 10,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				10
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "1e9dcd6e-8966-48b7-b156-9bc39b0acb3a",
+			"name": "GetTypeByParams",
+			"url": "http://localhost:3000/vehicle-types?brand_id=1",
+			"time": 7,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				7
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "f0d12055-43a0-4196-b62f-e74703edc3ff",
+			"name": "GetModels",
+			"url": "http://localhost:3000/vehicle-models",
+			"time": 4,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				4
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "79c3c04b-8bb6-41b6-a650-b4afbc9345a8",
+			"name": "GetModelsbyID",
+			"url": "http://localhost:3000/vehicle-models",
+			"time": 5,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				5
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "e531668c-122c-4f42-8288-e654f1613ca9",
+			"name": "AddModels",
+			"url": "http://localhost:3000/vehicle-models",
+			"time": 8,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				8
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "95787d76-8829-45cd-9480-5e6e2b6ca40b",
+			"name": "PatchModels",
+			"url": "http://localhost:3000/vehicle-models/1",
+			"time": 11,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				11
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "c8ad9345-bc3b-440f-82fe-b7a0f18c07a5",
+			"name": "DeleteModels",
+			"url": "http://localhost:3000/vehicle-models/4",
+			"time": 3,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				3
+			],
+			"allTests": [
+				{}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 512,
+	"collection": {
+		"requests": [
+			{
+				"id": "4281e76d-da44-4f35-b7fa-2c8c80a55e66",
+				"method": "POST"
+			},
+			{
+				"id": "c889dafd-7705-4c88-94cc-0f20c27291db",
+				"method": "POST"
+			},
+			{
+				"id": "58888a3d-1a51-4e09-a6e5-72eced08ab90",
+				"method": "GET"
+			},
+			{
+				"id": "db63d001-fb9c-4d66-8c65-c64935ac664d",
+				"method": "GET"
+			},
+			{
+				"id": "9d903e9d-4e4b-4b55-bcd5-1b7a099edb1a",
+				"method": "DELETE"
+			},
+			{
+				"id": "1ce419cb-7700-4ea2-8d1b-6622e8f1bb66",
+				"method": "GET"
+			},
+			{
+				"id": "b015e047-18cb-4d72-be6a-b0712ae22707",
+				"method": "POST"
+			},
+			{
+				"id": "8859e06b-358b-461b-ad9d-bb80070c13aa",
+				"method": "GET"
+			},
+			{
+				"id": "ba0f4c53-ba9c-4fdc-b39b-98169e3d3ce7",
+				"method": "PATCH"
+			},
+			{
+				"id": "0ae15dc3-878e-4318-9fdd-dc6407e23bdf",
+				"method": "DELETE"
+			},
+			{
+				"id": "dde35719-8b3c-4975-b935-5f40740e743b",
+				"method": "GET"
+			},
+			{
+				"id": "e0e0f6b9-c88e-4ac2-8f97-9beeef289ead",
+				"method": "GET"
+			},
+			{
+				"id": "81a1776e-2bbe-4e3d-9bfb-bf9c09c1946b",
+				"method": "POST"
+			},
+			{
+				"id": "fdffdd16-3d17-45d9-8529-a8925f909231",
+				"method": "PATCH"
+			},
+			{
+				"id": "7cbb2ce5-c608-4998-b834-3ea6e903c7bc",
+				"method": "DELETE"
+			},
+			{
+				"id": "6fd11f21-d191-47b0-bddd-7001a206af99",
+				"method": "GET"
+			},
+			{
+				"id": "691186d2-cee0-401f-8719-f70852eaf19d",
+				"method": "GET"
+			},
+			{
+				"id": "ee57cb81-fb9e-41f2-a27c-d565a2f08a00",
+				"method": "POST"
+			},
+			{
+				"id": "c04208f3-0327-46da-bfda-9edf842be34e",
+				"method": "PATCH"
+			},
+			{
+				"id": "6005ece8-ad06-4e80-afec-bf2e831b3752",
+				"method": "DELETE"
+			},
+			{
+				"id": "a3ea5a61-f3cf-4fe8-8bad-dec7ddd4ac3f",
+				"method": "GET"
+			},
+			{
+				"id": "a41e2f17-24ff-417d-8876-01ba9a73b08e",
+				"method": "GET"
+			},
+			{
+				"id": "30de3e15-6ba1-4da0-ad30-d13eefb596df",
+				"method": "GET"
+			},
+			{
+				"id": "b1b4694d-4f1a-49e0-b54d-276089f5da5d",
+				"method": "POST"
+			},
+			{
+				"id": "07eaf6a3-77ed-4d32-ba3e-24833ed91544",
+				"method": "PATCH"
+			},
+			{
+				"id": "fcb76dc2-69a4-42ed-b7cd-e421dd32d5c2",
+				"method": "DELETE"
+			},
+			{
+				"id": "1e9dcd6e-8966-48b7-b156-9bc39b0acb3a",
+				"method": "GET"
+			},
+			{
+				"id": "f0d12055-43a0-4196-b62f-e74703edc3ff",
+				"method": "GET"
+			},
+			{
+				"id": "79c3c04b-8bb6-41b6-a650-b4afbc9345a8",
+				"method": "GET"
+			},
+			{
+				"id": "e531668c-122c-4f42-8288-e654f1613ca9",
+				"method": "POST"
+			},
+			{
+				"id": "95787d76-8829-45cd-9480-5e6e2b6ca40b",
+				"method": "PATCH"
+			},
+			{
+				"id": "c8ad9345-bc3b-440f-82fe-b7a0f18c07a5",
+				"method": "DELETE"
+			}
+		]
+	}
+}
